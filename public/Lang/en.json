@@ -14,6 +14,9 @@
         "External Link":"External Link",
         "Table":"Table",
         "Tree":"Tree"
-
+    },
+    "sideBar":{
+        "home":"Home",
+        "logout":"Log out"
     }
 }

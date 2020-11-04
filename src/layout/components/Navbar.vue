@@ -13,12 +13,12 @@
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
           <router-link to="/">
             <el-dropdown-item>
-              Home
+              {{$t("sideBar.home")}}
             </el-dropdown-item>
           </router-link>
         
           <el-dropdown-item divided @click.native="logout">
-            <span style="display:block;">Log Out</span>
+            <span style="display:block;">{{$t("sideBar.logout")}}</span>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>

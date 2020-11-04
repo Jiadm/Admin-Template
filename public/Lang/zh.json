@@ -14,5 +14,9 @@
         "External Link":"外部链接",
         "Table":"表格",
         "Tree":"树"
+    },
+    "sideBar":{
+        "home":"首页",
+        "logout":"退出"
     }
 }
