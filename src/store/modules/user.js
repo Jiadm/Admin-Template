@@ -68,7 +68,8 @@ const actions = {
   logout({ commit, state }) {
     
     return new Promise((resolve, reject) => {
-      removeToken()
+      removeToken() // must remove  token  first
+      commit('RESET_STATE')
       resolve()
       
     })
