@@ -5,6 +5,13 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
+       <template >
+       
+
+        <screenfull id="screenfull" class="right-menu-item hover-effect" />
+
+      </template>
+
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
           <img :src="userlogo" class="user-avatar">
@@ -30,11 +37,12 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
-
+import Screenfull from '@/components/Screenfull'
 export default {
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
+    Screenfull
   },
   data() {
     return {
