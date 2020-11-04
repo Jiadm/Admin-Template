@@ -1,5 +1,15 @@
 # Admin-Template
-vue elementui vuex vue-router i18n 
+This is base admin template from panjiachen. thanks.
+And the related tech points:
+```
++ vue 
++ elementui 
++ vuex 
++ vue-router 
++ i18n  
++ axios
+
+```
 
 ## Getting started
 
@@ -17,7 +27,7 @@ npm install
 npm run dev
 ```
 
-This will automatically open http://localhost:9527
+This will automatically open http://localhost:9528
 
 ## Build
 
