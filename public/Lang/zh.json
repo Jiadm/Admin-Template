@@ -1,4 +1,8 @@
 {
+    "company":{
+        "copyright":"版权所有",
+        "Yizit":"上海因致信息科技有限公司"
+    },
     "login":{
         "systemName":"Yizit后台模板",
         "loginForm":"登录框",

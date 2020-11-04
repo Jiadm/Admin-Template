@@ -1,4 +1,8 @@
 {
+    "company":{
+        "copyright":"Copyright",
+        "Yizit":"Yizit. All Rights Reserved"
+    },
     "login":{
         "systemName":"Yizit Admin",
         "loginForm":"Login Form",

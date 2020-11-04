@@ -75,14 +75,14 @@ const actions = {
     })
   },
 
-  // remove token
-  resetToken({ commit }) {
-    return new Promise(resolve => {
-      removeToken() // must remove  token  first
-      commit('RESET_STATE')
-      resolve('remove token success')
-    })
-  }
+  // // remove token
+  // resetToken({ commit }) {
+  //   return new Promise(resolve => {
+  //     removeToken() // must remove  token  first
+  //     commit('RESET_STATE')
+  //     resolve('remove token success')
+  //   })
+  // }
 }
 
 export default {

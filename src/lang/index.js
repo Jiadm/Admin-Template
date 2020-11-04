@@ -1,17 +1,14 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import Cookies from 'js-cookie'
-// import zh from './zh.json' // 简体中文语言包
-// import en from './en.json' // 英文语言包
 import axios from 'axios'
 
 Vue.use(VueI18n)
 Vue.prototype.axios = axios
 
 function getServerConfig(jsonName) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         axios.get('./Lang/' + jsonName).then(result => {
-            let config = result.data;
+            const config = result.data;
             resolve(config);
         });
     });
@@ -43,7 +40,7 @@ export function getstorageLanguage() {
     const chooseLanguage = localStorage.getItem('yizit_language')
     if (chooseLanguage) return chooseLanguage
     else return 'en'
-  
+
 }
 
 const i18n = new VueI18n({
@@ -56,14 +53,14 @@ const i18n = new VueI18n({
 })
 
 //动态获取语言json文件
-export async function setLangs(){
-    const en = await getServerConfig('en.json').then(res => {return res }).catch(err=>{return {}})
-    const zh = await getServerConfig('zh.json').then(res =>  {return res }).catch(err=>{return {}})
-    i18n.setLocaleMessage('en',en)
-    i18n.setLocaleMessage('zh',zh)
+export async function setLangs() {
+    const en = await getServerConfig('en.json').then(res => { return res }).catch(err => { return {} })
+    const zh = await getServerConfig('zh.json').then(res => { return res }).catch(err => { return {} })
+    i18n.setLocaleMessage('en', en)
+    i18n.setLocaleMessage('zh', zh)
     // messages.en=en
     // messages.zh=zh
-    }
+}
 setLangs()
 
 export default i18n

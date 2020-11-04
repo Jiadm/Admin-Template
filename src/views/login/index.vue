@@ -63,7 +63,7 @@
         </el-form>
       </div>
       <footer class="app-login-footer">
-        版权所有©{{(new Date()).getFullYear()}}上海因致信息科技有限公司
+        {{$t("company.copyright")}}©2009-{{(new Date()).getFullYear()}}  {{$t("company.Yizit")}}
       </footer>
     </el-main>
 
