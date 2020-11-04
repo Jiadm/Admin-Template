@@ -1,0 +1,9 @@
+{
+    "login":{
+        "systemName":"Yizit Admin",
+        "loginForm":"Login Form",
+        "name":"Name",
+        "password":"Password",
+        "login":"Login"
+    }
+}

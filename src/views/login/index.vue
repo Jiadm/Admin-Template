@@ -4,7 +4,7 @@
       <el-row class="app-login-header" :gutter="20">
         <el-col :span="18">
           <a class="app-login-logo" href="/Login">
-            <strong class="hidden-xs-only">Yizit Admin</strong>
+            <strong class="hidden-xs-only">{{$t("login.systemName")}}</strong>
           </a>
         </el-col>
       </el-row>
@@ -20,7 +20,7 @@
         >
           <div class="login-title--container">
             <h3 class="title">
-              <span>Login Form</span>
+              <span>{{$t("login.loginForm")}}</span>
             </h3>
           </div>
           <el-form-item prop="userName">
@@ -29,7 +29,7 @@
               v-on:keyup.native.enter="handleLogin"
               ref="username"
               id="login-form-username"
-              placeholder="Name"
+              :placeholder="$t('login.name')"
               name="userName"
               type="text"
               :maxlength="100"
@@ -45,7 +45,7 @@
               ref="password"
               id="login-form-password"
               v-model="loginForm.password"
-              placeholder="Password"
+              :placeholder="$t('login.password')"
               name="password"
               :maxlength="30"
               auto-complete="on"
@@ -58,7 +58,7 @@
             type="primary"
             style="width: 100%; margin-bottom: 30px"
             v-on:click="handleLogin"
-            >Login</el-button
+            >{{$t("login.login")}}</el-button
           >
         </el-form>
       </div>
@@ -66,11 +66,24 @@
         版权所有©{{(new Date()).getFullYear()}}上海因致信息科技有限公司
       </footer>
     </el-main>
+
+     <!-- <div class="login-i18n">
+        <span>english：</span>
+        <el-dropdown @@command="handleLanguageChange">
+            <span class="el-dropdown-link">
+                <i class="app-header-item iconfont el-icon-language"></i>
+            </span>
+            <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item v-for="lo in locales" :key="lo.value" :disabled="lo.value === locale" :command="lo.value">{{lo.label}}</el-dropdown-item>
+            </el-dropdown-menu>
+        </el-dropdown>
+    </div> -->
   </div>
 </template>
 
 <script>
 import { validUsername } from "@/utils/validate";
+import { getlanguage } from '@/utils/lang'
 import { Message } from "element-ui";
 export default {
   name: "Login",
@@ -90,6 +103,8 @@ export default {
       }
     };
     return {
+      locale: getlanguage(),//selected language
+      locales: this.$store.getters.locales,//applicable language
       loginForm: {
         username: "",
         password: "",
@@ -132,9 +147,10 @@ export default {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
           this.loading = true;
+
           this.$store
             .dispatch("user/login", this.loginForm)
-            .then(() => {
+            .then((resolve) => {
               this.$router.push({ path: this.redirect || "/" });
               this.loading = false;
             })
@@ -147,12 +163,18 @@ export default {
 
               this.loading = false;
             });
+             
+            this.$store.dispatch("lang/setLanguage",this.locale)
+            
         } else {
           //console.log("error submit!!");
           return false;
         }
       });
     },
+    handleLanguageChange(){
+
+    }
   },
 };
 </script>
