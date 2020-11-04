@@ -5,5 +5,15 @@
         "name":"Name",
         "password":"Password",
         "login":"Login"
+    },
+    "menu":{
+        "Dashboard":"Dashboard",
+        "Form":"Form",
+        "Example":"Example",
+        "Nested":"Nested",
+        "External Link":"External Link",
+        "Table":"Table",
+        "Tree":"Tree"
+
     }
 }
