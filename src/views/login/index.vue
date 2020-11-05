@@ -83,7 +83,7 @@
 
 <script>
 import { validUsername } from "@/utils/validate";
-import { getlanguage } from '@/utils/lang'
+import { getlanguage } from "@/utils/lang"
 import { Message } from "element-ui";
 export default {
   name: "Login",

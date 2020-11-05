@@ -5,7 +5,19 @@ import axios from 'axios'
 import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
+import {getServerConfig} from '@/utils/get-server-config'
 
+// export async function getApiRoots() {
+//   const apis =  getServerConfig('./Setting/config.json').then(res => { return res }).catch(err => { return {} })
+//   return apis.configAPI
+// }
+
+// const baseService= {
+//   baseURL: getApiRoots(),//'http://192.168.7.11:9000', // config api根目录
+//   // withCredentials: true, // send cookies when cross-domain requests
+//   timeout: 90000 // request timeout
+// }
+// const service = axios.create(baseService)
 
 // create an axios instance
 const service = axios.create({
@@ -13,6 +25,9 @@ const service = axios.create({
   // withCredentials: true, // send cookies when cross-domain requests
   timeout: 90000 // request timeout
 })
+
+
+
 
 // request interceptor
 service.interceptors.request.use(

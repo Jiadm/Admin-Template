@@ -13,7 +13,7 @@ module.exports = {
 
   // add your custom rules here
   //it is base on https://github.com/vuejs/eslint-config-vue
-  rules: {
+  rules: { //0:关闭 1:警告 2:错误
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
       "multiline": {

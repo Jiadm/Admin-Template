@@ -6,6 +6,7 @@ const getDefaultState = () => {
   return {
     token: getToken(),
     name: '',
+    permissions:[]
     //avatar: ''
   }
 }
@@ -21,6 +22,9 @@ const mutations = {
   },
   SET_NAME: (state, name) => {
     state.name = name
+  },
+  SET_PERMISSIONS: (state, permissions) => {
+    state.permissions = permissions
   },
   SET_AVATAR: (state, avatar) => {
     state.avatar = avatar
@@ -54,8 +58,9 @@ const actions = {
         }
 
         const name  =data.userName
-       
+        const permissions= data.permissions
         commit('SET_NAME', name)
+        commit('SET_PERMISSIONS', permissions)//save user's permissions from api return
         //commit('SET_AVATAR', avatar)
         resolve(data)
       }).catch(error => {

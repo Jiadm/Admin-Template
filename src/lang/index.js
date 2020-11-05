@@ -24,10 +24,9 @@ const i18n = new VueI18n({
 export async function setLangs() {
     const en = await getServerConfig('./Lang/en.json').then(res => { return res }).catch(err => { return {} })
     const zh = await getServerConfig('./Lang/zh.json').then(res => { return res }).catch(err => { return {} })
-    i18n.setLocaleMessage('en', en)
+    i18n.setLocaleMessage('en',en )
     i18n.setLocaleMessage('zh', zh)
-    // messages.en=en
-    // messages.zh=zh
+
 }
 setLangs()
 

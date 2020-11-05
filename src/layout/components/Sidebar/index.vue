@@ -28,7 +28,8 @@ export default {
   components: { SidebarItem, Logo },
   computed: {
     ...mapGetters([
-      'sidebar'
+      'sidebar',
+      'permissions'
     ]),
     routes() {
       return this.$router.options.routes
