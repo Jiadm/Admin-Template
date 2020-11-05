@@ -3,7 +3,8 @@ const getters = {
   device: state => state.app.device,
   token: state => state.user.token,
   language: state=>state.lang.language,
-  locals:state=>state.lang.locals,
+  locales:state=>state.lang.locals,
+  locale:state=>state.lang.language,
   avatar: state => state.user.avatar,
   name: state => state.user.name
 }

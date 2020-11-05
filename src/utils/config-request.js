@@ -6,11 +6,12 @@ import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 
+
 // create an axios instance
 const service = axios.create({
   baseURL: 'http://192.168.7.11:9000', // config api根目录
   // withCredentials: true, // send cookies when cross-domain requests
-  timeout: 50000 // request timeout
+  timeout: 90000 // request timeout
 })
 
 // request interceptor
