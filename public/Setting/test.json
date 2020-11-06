@@ -1,0 +1,416 @@
+[
+    {
+        "id": 600,
+        "title": "Shipment",
+        "icon": "turboicon-jichu",
+        "appId": 1,
+        "isLeaf": false,
+        "parentId": 0,
+        "isViewFunc": false,
+        "type": 0,
+        "path": "",
+        "hideInAsideMenu": false,
+        "children": [
+            {
+                "id": 60000,
+                "title": "Sort Delivery",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 600,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "SortDelivery",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6000000,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60000,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 60001,
+                "title": "Unsort Delivery",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 600,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "UnsortDelivery",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6000100,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60001,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6000101,
+                        "title": "Package Generated",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60001,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6000102,
+                        "title": "Package Show",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60001,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 60002,
+                "title": "Shipment Queue",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 600,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "ShipmentQueue",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6000200,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60002,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 601,
+        "title": "Package",
+        "icon": "turboicon-paixu",
+        "appId": 1,
+        "isLeaf": false,
+        "parentId": 0,
+        "isViewFunc": false,
+        "type": 0,
+        "path": "",
+        "hideInAsideMenu": false,
+        "children": [
+            {
+                "id": 60100,
+                "title": "Sort Package Plan A",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 601,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "SortPackagePlanA",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6010000,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60100,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6010001,
+                        "title": "Empty",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60100,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "Empty",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 60101,
+                "title": "Unsort Package Plan A",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 601,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "UnsortPackagePlanA",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6010100,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60101,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6010101,
+                        "title": "Unwrap",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60101,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "Unwrap",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 60102,
+                "title": "Sort Package Plan B",
+                "icon": null,
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 601,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "SortPackagePlanB",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6010200,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60102,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6010201,
+                        "title": "Print",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60102,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "Print",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 602,
+        "title": "Loading List",
+        "icon": "turboicon-zhiliang",
+        "appId": 1,
+        "isLeaf": false,
+        "parentId": 0,
+        "isViewFunc": false,
+        "type": 0,
+        "path": "",
+        "hideInAsideMenu": false,
+        "children": [
+            {
+                "id": 60200,
+                "title": "Sort Loading List",
+                "icon": "",
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 602,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "SortLoadingList",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6020000,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60200,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020001,
+                        "title": "Create",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60200,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Create",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020002,
+                        "title": "Edit",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60200,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Edit",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020003,
+                        "title": "Delete",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60200,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Delete",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "id": 60201,
+                "title": "Unsort Loading List",
+                "icon": "",
+                "appId": 1,
+                "isLeaf": false,
+                "parentId": 602,
+                "isViewFunc": false,
+                "type": 0,
+                "path": "UnsortLoadingList",
+                "hideInAsideMenu": false,
+                "children": [
+                    {
+                        "id": 6020100,
+                        "title": "View",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60201,
+                        "isViewFunc": true,
+                        "type": 1,
+                        "path": "View",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020101,
+                        "title": "Create",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60201,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Create",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020102,
+                        "title": "Edit",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60201,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Edit",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    },
+                    {
+                        "id": 6020103,
+                        "title": "Delete",
+                        "icon": null,
+                        "appId": 1,
+                        "isLeaf": true,
+                        "parentId": 60201,
+                        "isViewFunc": false,
+                        "type": 1,
+                        "path": "Delete",
+                        "hideInAsideMenu": false,
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 603,
+        "title": "Log",
+        "icon": "el-icon-document",
+        "appId": 1,
+        "isLeaf": false,
+        "parentId": 0,
+        "isViewFunc": false,
+        "type": 0,
+        "path": "LogQuery",
+        "hideInAsideMenu": false,
+        "children": null
+    }
+]

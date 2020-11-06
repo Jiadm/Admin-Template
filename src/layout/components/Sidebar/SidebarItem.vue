@@ -1,21 +1,24 @@
 <template>
   <div v-if="!item.hidden">
     <template v-if="hasOneShowingChild(item.children,item) && (!onlyOneChild.children||onlyOneChild.noShowingChildren)&&!item.alwaysShow">
-      <app-link v-if="onlyOneChild.meta" :to="resolvePath(onlyOneChild.path)">
+      <!-- <app-link v-if="onlyOneChild.meta" :to="resolvePath(onlyOneChild.path)"> -->
+        <app-link v-if="onlyOneChild.title &&!onlyOneChild.isViewFunc" :to="resolvePath(onlyOneChild.path)">
         <el-menu-item :index="resolvePath(onlyOneChild.path)" :class="{'submenu-title-noDropdown':!isNest}">
           <!-- <item :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)" :title="onlyOneChild.meta.title" /> -->
-          <item :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)" :title="$t(`menu.`+onlyOneChild.meta.title)" />
+          <!-- <item :icon="onlyOneChild.meta.icon||(item.meta&&item.meta.icon)" :title="$t(`menu.`+onlyOneChild.meta.title)" /> -->
+          <item :icon="onlyOneChild.icon||(item.icon)" :title="$t(`menu.`+onlyOneChild.title)" />
         </el-menu-item>
       </app-link>
     </template>
 
     <el-submenu v-else ref="subMenu" :index="resolvePath(item.path)" popper-append-to-body>
       <template slot="title">
-        <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="$t(`menu.`+item.meta.title)" />
+        <!-- <item v-if="item.meta" :icon="item.meta && item.meta.icon" :title="$t(`menu.`+item.meta.title)" /> -->
+        <item v-if="item.title" :icon="item.icon" :title="$t(`menu.`+item.title)" />
       </template>
       <sidebar-item
         v-for="child in item.children"
-        :key="child.path"
+        :key="child.id"
         :is-nest="true"
         :item="child"
         :base-path="resolvePath(child.path)"
@@ -59,8 +62,11 @@ export default {
   },
   methods: {
     hasOneShowingChild(children = [], parent) {
+    
+      if(!children) return false;
+     
       const showingChildren = children.filter(item => {
-        if (item.hidden) {
+        if (item.hidden || item.isViewFunc) {
           return false
         } else {
           // Temp set(will be used if only has one showing child)

@@ -1,0 +1,16 @@
+{
+  "id": "2186009",
+  "name": "Admin-template",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-yizit-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7226233",
+      "name": "发货",
+      "font_class": "fahuo",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}

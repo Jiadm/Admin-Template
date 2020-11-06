@@ -19,7 +19,14 @@ export default {
     if (icon) {
       if (icon.includes('el-icon')) {
         vnodes.push(<i class={[icon, 'sub-el-icon']} />)
-      } else {
+      }
+      else if(icon.includes('icon-yizit')){//引入自定义的iconfont图标库
+         vnodes.push(<i class={[icon, 'sub-el-icon']} />)
+      } 
+      else if(icon.includes('iconfont')){//引入yizit自定义的iconfont图标库
+         vnodes.push(<i class={[icon, 'sub-el-icon']} />)
+      } 
+      else {
         vnodes.push(<svg-icon icon-class={icon}/>)
       }
     }
