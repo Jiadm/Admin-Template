@@ -17,7 +17,12 @@
         "Nested":"嵌套",
         "External Link":"外部链接",
         "Table":"表格",
-        "Tree":"树"
+        "Tree":"树",
+        "Shipment":"发货",
+        "Package":"包装",
+        "Loading List":"装车单",
+        "Log":"日志"
+
     },
     "sideBar":{
         "home":"首页",

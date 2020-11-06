@@ -10,7 +10,7 @@ export function login(data) {
 
 export function getInfo(token) {
   return request({
-    url: '/Sso/Passport/userProfile/1',
+    url: '/Sso/Passport/userProfile/6',
     method: 'get',
     params: { token }
   })

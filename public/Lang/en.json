@@ -17,7 +17,12 @@
         "Nested":"Nested",
         "External Link":"External Link",
         "Table":"Table",
-        "Tree":"Tree"
+        "Tree":"Tree",
+        "Shipment":"Shipment",
+        "Package":"Pakcage",
+        "Loading List":"Loading List",
+        "Log":"Log"
+
     },
     "sideBar":{
         "home":"Home",
