@@ -32,26 +32,26 @@ import Layout from '@/layout'
  */
 export const constantRoutes = [
   {
-    id:'1',
+  
     path: '/login',
     component: () => import('@/views/login/index'),
     hidden: true
   },
 
   {
-    id:'2',
+  
     path: '/404',
     component: () => import('@/views/404'),
     hidden: true
   },
 
   {
-    id:'3',
+    
     path: '/',
     component: Layout,
     redirect: '/dashboard',
     children: [{
-      id:'9',
+     
       path: 'dashboard',
       name: 'Dashboard',
       component: () => import('@/views/dashboard/index'),
@@ -62,7 +62,7 @@ export const constantRoutes = [
   },
 
   {
-    id:'4',
+    
     path: '/example',
     component: Layout,
     redirect: '/example/table',
@@ -91,7 +91,7 @@ export const constantRoutes = [
   },
 
   {
-    id:'5',
+    
     path: '/form',
     component: Layout,
     children: [
@@ -107,7 +107,7 @@ export const constantRoutes = [
   },
 
   {
-    id:'6',
+    
     path: '/nested',
     component: Layout,
     redirect: '/nested/menu1',
@@ -176,7 +176,7 @@ export const constantRoutes = [
   },
 
   {
-    id:'7',
+  
     path: 'external-link',
     component: Layout,
     children: [

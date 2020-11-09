@@ -23,7 +23,16 @@
         "Shipment":"Shipment",
         "Package":"Pakcage",
         "Loading List":"Loading List",
-        "Log":"Log"
+        "Log":"Log",
+        "Sort Delivery":"Sort Delivery",
+        "Unsort Delivery":"Unsort Delivery",
+        "Shipment Queue":"Shipment Queue",
+        "Sort Package Plan A":"Sort Package Plan A",
+        "Unsort Package Plan A":"Unsort Package Plan A",
+        "Sort Package Plan B":"Sort Package Plan B",
+        "Sort Loading List":"Sort Loading List",
+        "Unsort Loading List":"Unsort Loading List"
+
 
     },
     "sideBar":{

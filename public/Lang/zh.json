@@ -5,7 +5,7 @@
     },
     "login":{
         "systemName":"Yizit后台模板",
-        "loginForm":"登录框",
+        "loginForm":"登录",
         "name":"登录名",
         "password":"密码",
         "login":"登录",
@@ -23,7 +23,15 @@
         "Shipment":"发货",
         "Package":"包装",
         "Loading List":"装车单",
-        "Log":"日志"
+        "Log":"日志",
+        "Sort Delivery":"排序发货计划",
+        "Unsort Delivery":"非排序发货计划",
+        "Shipment Queue":"发货队列",
+        "Sort Package Plan A":"排序包装方案A",
+        "Unsort Package Plan A":"非排序包装方案A",
+        "Sort Package Plan B":"排序包装方案B",
+        "Sort Loading List":"排序装车单",
+        "Unsort Loading List":"非排序装车单"
 
     },
     "sideBar":{

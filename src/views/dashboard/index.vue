@@ -1,6 +1,8 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text"><i class="iconfont icon-yujing"></i>
+    <div class="dashboard-text">
+      <i class="iconfont icon-yujing"></i>
+      <i class="icon-yizit-baozhuang"></i>
 name: {{ name }}</div>
   </div>
 </template>
