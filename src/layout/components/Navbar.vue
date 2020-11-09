@@ -85,7 +85,7 @@ export default {
     },
    async handleLanguageChange(command) {
       await  this.$store.dispatch("lang/setLanguage", command)
-       this.$i18n.locale = localStorage.getItem('yizit_language')
+       this.$i18n.locale = localStorage.getItem('yizit_language')//switch language according the language selected in localstorage
       
     },
   },

@@ -4,7 +4,7 @@ import { getlanguage, setlanguage } from '@/utils/lang'
 const getDefault = () => {
   return {
     language: getlanguage(),
-    locals:['en','zh']
+    locals:['en','zh']//if need more language option, add it here
   }
 }
 
@@ -21,7 +21,7 @@ const mutations = {
 
 const actions = {
  
-  setLanguage({ commit }, language) {
+  setLanguage({ commit }, language='en') {
       commit('SET_LANGUAGE', language) //save language to vuex state
       setlanguage(language) //save language to localstorage
   } 
