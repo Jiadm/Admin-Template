@@ -1,4 +1,4 @@
-import router from './router'
+import router,{resetRouter} from './router'
 import store from './store'
 import { Message } from 'element-ui'
 import NProgress from 'nprogress' // progress bar
@@ -36,9 +36,11 @@ router.beforeEach(async (to, from, next) => {
           await store.dispatch('user/getInfo')
 
           const accessRoutes = await store.dispatch('permission/generateRoutes', store.state.user.permissions)
-          console.log(accessRoutes);
+        
+          resetRouter()
           // dynamically add accessible routes
           router.addRoutes(accessRoutes)
+          
           next({ ...to, replace: true })
         } catch (error) {
           // remove token and go to login page to re-login

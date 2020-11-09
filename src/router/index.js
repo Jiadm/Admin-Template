@@ -199,11 +199,20 @@ const createRouter = () => new Router({
   routes: constantRoutes
 })
 
+//init directly load fixed routes
 const router = createRouter()
 
+
+//clear router function
+const emptyRouter = () => new Router({
+  scrollBehavior: () => ({ y: 0 }),
+  routes: []
+})
+
 // Detail see: https://github.com/vuejs/vue-router/issues/1234#issuecomment-357941465
+//reset router avoid duplicate router waring
 export function resetRouter() {
-  const newRouter = createRouter()
+  const newRouter = emptyRouter()
   router.matcher = newRouter.matcher // reset router
 }
 
