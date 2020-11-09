@@ -90,14 +90,14 @@ export default {
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!validUsername(value)) {
-        callback(new Error("Please enter the correct user name"));
+        callback(new Error(this.$t('login.valdiateUser')));
       } else {
         callback();
       }
     };
     const validatePassword = (rule, value, callback) => {
       if (value.length < 6) {
-        callback(new Error("The password can not be less than 6 digits"));
+        callback(new Error(this.$t('login.valdiatePwd',[6])));
       } else {
         callback();
       }
@@ -156,7 +156,7 @@ export default {
             })
             .catch((error) => {
               Message({
-                message: "user or password is not incorrect",
+                message: this.$t('message.incorrect',[this.$t('login.password')]),//"user or password is not incorrect",
                 type: "error",
                 duration: 1.5 * 1000,
               });

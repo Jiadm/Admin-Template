@@ -8,7 +8,9 @@
         "loginForm":"登录框",
         "name":"登录名",
         "password":"密码",
-        "login":"登录"
+        "login":"登录",
+        "valdiateUser":"请输入正确的用户名",
+        "valdiatePwd":"密码长度不能小于 {0} 位"
     },
     "menu":{
         "Dashboard":"总览",
@@ -27,5 +29,8 @@
     "sideBar":{
         "home":"首页",
         "logout":"退出"
+    },
+    "message":{
+        "incorrect": "{0} 不正确，请检查"
     }
 }

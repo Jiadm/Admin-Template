@@ -8,7 +8,9 @@
         "loginForm":"Login Form",
         "name":"Name",
         "password":"Password",
-        "login":"Login"
+        "login":"Login",
+        "valdiateUser":"Please enter the correct user name",
+        "valdiatePwd":"The password can not be less than {0} digits"
     },
     "menu":{
         "Dashboard":"Dashboard",
@@ -27,5 +29,8 @@
     "sideBar":{
         "home":"Home",
         "logout":"Log out"
+    },
+    "message":{
+        "incorrect": "{0} is incorrect，please check"
     }
 }
