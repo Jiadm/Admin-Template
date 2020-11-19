@@ -80,6 +80,14 @@ export const constantRoutes = [
         // meta: { title: 'Table', icon: 'table' }
       },
       {
+        path: 'dragtable',
+        name: 'DragTable',
+        component: () => import('@/views/dragTable/index'),
+        title:  'DragTable',
+        icon: 'table',
+        // meta: { title: 'Table', icon: 'table' }
+      },
+      {
         path: 'tree',
         name: 'Tree',
         component: () => import('@/views/tree/index'),
@@ -194,7 +202,7 @@ export const constantRoutes = [
 ]
 
 const createRouter = () => new Router({
-  // mode: 'history', // require service support
+   //mode: 'history', // require service support
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRoutes
 })
@@ -205,6 +213,7 @@ const router = createRouter()
 
 //clear router function
 const emptyRouter = () => new Router({
+  //mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: []
 })

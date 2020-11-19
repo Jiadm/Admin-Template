@@ -2,6 +2,7 @@ import Vue from 'vue'
 import axios from 'axios'
 
 Vue.prototype.axios = axios
+
 /**
  * 
  * @param {*} jsonPath 传入的json地址

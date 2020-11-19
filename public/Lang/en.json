@@ -19,6 +19,7 @@
         "Nested":"Nested",
         "External Link":"External Link",
         "Table":"Table",
+        "DragTable":"Drag Table",
         "Tree":"Tree",
         "Shipment":"Shipment",
         "Package":"Pakcage",
@@ -32,8 +33,6 @@
         "Sort Package Plan B":"Sort Package Plan B",
         "Sort Loading List":"Sort Loading List",
         "Unsort Loading List":"Unsort Loading List"
-
-
     },
     "sideBar":{
         "home":"Home",

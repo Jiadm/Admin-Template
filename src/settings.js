@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: 'Yizit Admin Template',
 
   /**
    * @type {boolean} true | false

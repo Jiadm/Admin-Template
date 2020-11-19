@@ -19,6 +19,7 @@
         "Nested":"嵌套",
         "External Link":"外部链接",
         "Table":"表格",
+        "DragTable":"可拖拽表格",
         "Tree":"树",
         "Shipment":"发货",
         "Package":"包装",
@@ -32,7 +33,6 @@
         "Sort Package Plan B":"排序包装方案B",
         "Sort Loading List":"排序装车单",
         "Unsort Loading List":"非排序装车单"
-
     },
     "sideBar":{
         "home":"首页",
